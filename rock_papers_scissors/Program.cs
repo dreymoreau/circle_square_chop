@@ -11,11 +11,16 @@
 
             while (playAgain)
             {
-                Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
-                player = Console.ReadLine();
-                player = player.ToLower();
+                player = "";
+                computer = "";
 
-                Console.WriteLine(player);
+                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS") {
+                    Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
+                    player = Console.ReadLine();
+                    player = player.ToLower();
+
+                    Console.WriteLine(player);
+                }
             }
 
             Console.ReadKey();
